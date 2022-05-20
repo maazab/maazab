@@ -1,0 +1,23 @@
+version: 0.0
+os: Ubuntu
+files:
+  - source: /
+    destination: /var/www/test
+hooks:
+  BeforeInstall:
+    - location: 
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location:
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: 
+    - location: 
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location:
+      timeout: 300
+      runas: root
